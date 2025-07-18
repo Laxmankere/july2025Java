@@ -3,7 +3,7 @@ package array.programs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P08_LuckyInteger {
+public class P02_LuckyInteger {
     // A lucky integer - appears exactly as many times as its value.
     public static void main(String[] args) {
         int[] arr = {2, 2, 3, 4, 3, 3, 4, 5};

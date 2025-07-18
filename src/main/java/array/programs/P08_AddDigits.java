@@ -2,7 +2,7 @@ package array.programs;
 
 import java.util.Scanner;
 
-public class P02_AddDigits {
+public class P08_AddDigits {
     public static void main(String[] args) {
         // Q. add all its digit until the result has only one digit and return its
         // We used divigibilty of 9 rule

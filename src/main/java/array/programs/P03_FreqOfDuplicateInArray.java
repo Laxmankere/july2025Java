@@ -3,7 +3,7 @@ package array.programs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P31_FreqOfDuplicateInArray {
+public class P03_FreqOfDuplicateInArray {
 
     public static void main(String[] args) {
         int nums[] = {1, 20, 2, 1, 10, 11, 11, 44, 84, 45, 20};

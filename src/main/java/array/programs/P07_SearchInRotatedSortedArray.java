@@ -1,6 +1,6 @@
 package array.programs;
 
-public class P03_SearchInRotatedSortedArray {
+public class P07_SearchInRotatedSortedArray {
     public static void main(String[] args) {
         // Find the index of element in rotated sorted Array
         int num[] = {4, 5, 6, 7, 0, 1, 2};

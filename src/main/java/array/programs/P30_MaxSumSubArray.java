@@ -1,6 +1,6 @@
 package array.programs;
 
-public class P07_MaxSumSubArray {
+public class P30_MaxSumSubArray {
     public static void main(String[] args) {
         // Q. find the subArray with largest sum and return it sum
         // Kadane’s Algorithm:
