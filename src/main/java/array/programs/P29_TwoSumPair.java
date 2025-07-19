@@ -31,7 +31,6 @@ public class P29_TwoSumPair {
             int expectedPair = target - num;
             if (hs.contains(expectedPair)) { // Check if the complement exists
                 System.out.println(expectedPair + " : " + num);
-                return;
             }
             hs.add(num); // Add current number to HashSet
         }

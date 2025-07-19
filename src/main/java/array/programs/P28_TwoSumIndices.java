@@ -9,7 +9,7 @@ public class P28_TwoSumIndices {
         int target = 9;
         twoSum(ar, target);
         System.out.println("---------------------");
-//        twoSumHashMap(ar, target);
+        twoSumHashMap(ar, target);
 
     }
 

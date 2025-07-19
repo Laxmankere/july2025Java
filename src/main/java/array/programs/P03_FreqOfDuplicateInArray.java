@@ -13,11 +13,10 @@ public class P03_FreqOfDuplicateInArray {
 
         // Count occurrences of each number
         for (int num : nums) {
-            Integer count = map.get(num);
-            if (count == null) {
-                map.put(num, 1);
+            if (map.containsKey(num)) {
+                map.put(num, map.get(num) + 1);
             } else {
-                map.put(num, count + 1);
+                map.put(num, 1);
             }
         }
 //			map.put(num, map.getOrDefault(num, 0) + 1);

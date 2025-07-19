@@ -4,12 +4,16 @@ import java.util.*;
 
 
 public class P_Practice {
+    // remove duplicate and sort
     public static void main(String[] args) {
-//        note: dont use any collection (List,Set..)
-        int num[] = {0, 9, 9, 0, 0, 9, 3, 2, 1};
+        int num[] = {10, 2, 13, 4, 5};
+        System.out.println(kLargest(num, 1));
 
+    }
 
-        for (int i = 0; i < num.length - 1; i++) {
+    public static int kLargest(int num[], int k) {
+
+        for (int i = 0; i < num.length; i++) {
             for (int j = i + 1; j < num.length; j++) {
                 if (num[i] > num[j]) {
                     int temp = num[i];
@@ -18,15 +22,12 @@ public class P_Practice {
                 }
             }
         }
-        System.out.print("Sorted Unique Array: ");
-        for (int i = 0; i < num.length; i++) {
-            if (i == 0 || num[i] != num[i - 1]) {
-                System.out.print(num[i] + " ");
-            }
-
-        }
+        return  num[k-1];
     }
 }
+
+
+
 
 
 
