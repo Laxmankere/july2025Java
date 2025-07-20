@@ -8,17 +8,17 @@ public class P16_FreqOfDuplicateString {
         String s = "java python java selenium playwright";
         freqOfEachString(s);
     }
+
     public static void freqOfEachString(String s) {
 
         String[] words = s.split(" ");
         Map<String, Integer> hm = new HashMap<>();
-        for (int i = 0; i < words.length; i++) {
-            String s1 = words[i];
-            hm.put(s1, hm.getOrDefault(s1, 0) + 1);
+        for (String w : words) {
+            hm.put(w, hm.getOrDefault(w, 0) + 1);
         }
 
         for (Map.Entry<String, Integer> e : hm.entrySet()) {
-            if(e.getValue()>1) {
+            if (e.getValue() > 1) {
                 System.out.println(e.getKey() + " : " + e.getValue());
             }
         }
