@@ -19,7 +19,6 @@ public class P28_TwoSumIndices {
             for (int j = i + 1; j < ar.length; j++) {
                 if (ar[i] + ar[j] == target) {
                     System.out.println(i + " : " + j);
-//                    return;
                 }
             }
         }

@@ -11,13 +11,11 @@ public class P20_KthSmallestElementInArray {
     }
 
     public static int findKthSmallestElement(int ar[], int k) {
-//        public static void findKthLargestElement(int ar[], int k) {
-        int temp;
 
         for (int i = 0; i < ar.length; i++) {
             for (int j = i + 1; j < ar.length; j++) {
                 if (ar[i] > ar[j]) {
-                    temp = ar[i];
+                  int  temp = ar[i];
                     ar[i] = ar[j];
                     ar[j] = temp;
                 }

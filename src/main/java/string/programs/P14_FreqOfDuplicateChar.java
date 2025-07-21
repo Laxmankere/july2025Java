@@ -12,13 +12,10 @@ public class P14_FreqOfDuplicateChar {
     public static void findDuplicateChar(String s) {
         Map<Character, Integer> hm = new HashMap<Character,Integer>();
         for (char ch : s.toCharArray()) {
-            if(ch == ' '){
-                continue;
-            }
             hm.put(ch, hm.getOrDefault(ch, 0) + 1);
         }
         for (Map.Entry<Character, Integer> e : hm.entrySet()) {
-            if (e.getValue() > 1) {
+            if (e.getValue() > 1 && e.getKey() !=' ') {
                 System.out.println(e.getKey() + " : " + e.getValue());
             }
         }

@@ -8,7 +8,7 @@ public class P14_LeftRotateArrayByKthPositn {
 
         rotateLeft(nums, k);
 
-        System.out.print("Array after left rotation: ");
+        System.out.println("Array after left rotation: ");
         for (int num : nums) {
             System.out.print(num + " ");
         }
