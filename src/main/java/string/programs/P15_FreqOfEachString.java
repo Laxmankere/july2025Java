@@ -19,11 +19,13 @@ public class P15_FreqOfEachString {
 //        String[] words = s.split(" ");
         String[] words = s.split("\\|");
         Map<String, Integer> hm = new HashMap<>();
-        for (int i = 0; i < words.length; i++) {
-            String s1 = words[i];
-            hm.put(s1, hm.getOrDefault(s1, 0) + 1);
+        for (String w : words) {
+            if (hm.containsKey(w)) {
+                hm.put(w, hm.get(w) + 1);
+            } else {
+                hm.put(w, 1);
+            }
         }
-
         for (Map.Entry<String, Integer> e : hm.entrySet()) {
             System.out.println(e.getKey() + " : " + e.getValue());
         }
