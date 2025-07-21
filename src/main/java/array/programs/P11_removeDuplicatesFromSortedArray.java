@@ -8,7 +8,7 @@ public class P11_removeDuplicatesFromSortedArray {
         int length = removeDuplicates(nums);
         System.out.println("Length after remove: " + length);
 
-        System.out.print("Array after removing duplicates: ");
+        System.out.println("Array after removing duplicates: ");
         for (int i = 0; i < length; i++) {
             System.out.print(nums[i] + " ");
         }

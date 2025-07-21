@@ -15,6 +15,7 @@ public class Student1 implements Comparable<Student1> {
 
     @Override
     public String toString() {
+        //return "Student age=" + age + ", name=" + name;  -> we can write this way also
         return "Student[age=" + age + ", name=" + name + "]";
     }
 
@@ -33,10 +34,10 @@ public class Student1 implements Comparable<Student1> {
 
         // Create a list of students
         List<Student1> students = new ArrayList<>();
-        students.add(new Student1(25, "Naveen"));
-        students.add(new Student1(20, "Ajay"));
-        students.add(new Student1(22, "Zara"));
-        students.add(new Student1(21, "Pooja"));
+        students.add(new Student1(25, "vaishali"));
+        students.add(new Student1(14, "Mahesh"));
+        students.add(new Student1(12, "Mayuri"));
+        students.add(new Student1(32, "laxman"));
 
         System.out.println("Before Sorting:");
         for (Student1 s : students) {
