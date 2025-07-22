@@ -1,4 +1,4 @@
-package abstractionConcept;
+package abstractionConcept.abstractDemo;
 
 public class AbstractDemo {
     public static void main(String[] args) {

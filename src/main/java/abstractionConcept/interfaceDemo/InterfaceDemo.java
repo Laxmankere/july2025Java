@@ -1,8 +1,8 @@
-package abstractionConcept;
+package abstractionConcept.interfaceDemo;
 
 public class InterfaceDemo {
     public static void main(String[] args) {
-        Shape1 circle = new Circle2(2);
+        Shape circle = new Circle(2);
 
         circle.area();
     }
