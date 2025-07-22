@@ -3,7 +3,7 @@ package string.programs;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class P18_FreqOfVowelsInString {
+public class P20_FreqOfVowelsInString {
 
     public static void main(String[] args) {
         String str = "welcomeeee";

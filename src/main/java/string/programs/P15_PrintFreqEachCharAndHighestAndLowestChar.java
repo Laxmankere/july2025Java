@@ -2,17 +2,17 @@ package string.programs;
 
 import java.util.HashMap;
 import java.util.Map;
+
 // find the occurrence of each char, and highest and lowest char
-public class P14_FindEachCharAndHighestAndLowestChar {
+public class P15_PrintFreqEachCharAndHighestAndLowestChar {
     public static void main(String[] args) {
 
-//        String s = "hi laxman how is your day today";
-        String s = "laxman kere";
+        String s = "hi laxman how is your day today";
 
         char highestChar = ' ';
-        int highestcount = 0;
+        int maxCount = 0;
         char lowestChar = ' ';
-        int lowestcount = Integer.MAX_VALUE; // Fix: initialize to max
+        int minCount = Integer.MAX_VALUE;
 
         Map<Character, Integer> hm = new HashMap<>();
         for (char ch : s.toCharArray()) {
@@ -24,21 +24,22 @@ public class P14_FindEachCharAndHighestAndLowestChar {
                 }
             }
         }
-
         for (Map.Entry<Character, Integer> e : hm.entrySet()) {
+
             System.out.println(e.getKey() + " : " + e.getValue());
-            if (e.getValue() >= highestcount) {
+
+            if (e.getValue() > maxCount) {
                 highestChar = e.getKey();
-                highestcount = e.getValue(); // Fix: update count
+                maxCount = e.getValue(); // update count
             }
-            if (e.getValue() <= lowestcount) {
+            if (e.getValue() < minCount) {
                 lowestChar = e.getKey();
-                lowestcount = e.getValue(); // Fix: update count
+                minCount = e.getValue(); //  update count
             }
 
         }
-        System.out.println("Highest occuring char : " + highestChar + " => " + highestcount);
+        System.out.println("Highest occuring char : " + highestChar + " => " + maxCount);
 
-        System.out.println("Lowest occuring char : " + lowestChar + " => " + lowestcount);
+        System.out.println("Lowest occuring char : " + lowestChar + " => " + minCount);
     }
 }

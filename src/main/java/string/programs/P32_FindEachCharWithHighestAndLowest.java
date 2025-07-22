@@ -5,12 +5,12 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class P15_PrintEachCharWithHighestAndLowest {
+public class P32_FindEachCharWithHighestAndLowest {
     public static void main(String[] args) {
         String s = "laxman kere";
 
         int highestcount = 0;
-        int lowestcount = Integer.MAX_VALUE; // Fix: initialize to max
+        int lowestcount = Integer.MAX_VALUE;
 
         List<Character> highestChars = new ArrayList<>();
         List<Character> lowestChars = new ArrayList<>();

@@ -6,12 +6,10 @@ public class P25_RepeatCharactersNTimes {
         int n = 2;
         System.out.println(repeatCharacters(s, n));
     }
-
     public static String repeatCharacters(String str, int n) {
         if (str == null || str.isEmpty()) {
             return str; // handle null, empty string
         }
-
         StringBuilder sb = new StringBuilder();
 
         for (char ch : str.toCharArray()) {
@@ -19,7 +17,6 @@ public class P25_RepeatCharactersNTimes {
                 sb.append(ch);
             }
         }
-
         return sb.toString();
     }
 }

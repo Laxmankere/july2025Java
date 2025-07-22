@@ -3,7 +3,7 @@ package string.programs;
 
 import java.util.*;
 
-public class P23_PrintKeyForDuplicateValues {
+public class P33_PrintKeyForDuplicateValues {
     public static void main(String[] args) {
         Map<Integer, String> mp = new LinkedHashMap<>();
         mp.put(1, "Tamil");

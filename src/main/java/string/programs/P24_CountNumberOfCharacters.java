@@ -1,6 +1,6 @@
 package string.programs;
 
-public class P25_CountNumberOfCharacters {
+public class P24_CountNumberOfCharacters {
     public static void main(String[] args) {
         String s = "hello world";
         int count = 0;

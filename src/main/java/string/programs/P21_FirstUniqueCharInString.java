@@ -3,7 +3,7 @@ package string.programs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P20_FirstUniqueCharInString {
+public class P21_FirstUniqueCharInString {
     public static void main(String[] args) {
         System.out.println(firstUniqChar("leetcode"));       // Output: 0
 //        System.out.println(firstUniqChar("loveleetcode"));   // Output: 2
@@ -13,9 +13,7 @@ public class P20_FirstUniqueCharInString {
     public static int firstUniqChar(String s) {
         Map<Character, Integer> hm = new HashMap<>();
 
-        // Step 1: Count frequency of each character
         for (char ch : s.toCharArray()) {
-//            map.put(ch, map.getOrDefault(ch, 0) + 1);
             if (hm.containsKey(ch)) {
                 hm.put(ch, hm.get(ch) + 1);
             } else {
