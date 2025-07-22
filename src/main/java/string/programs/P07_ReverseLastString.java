@@ -25,14 +25,5 @@ public class P07_ReverseLastString {
         // Join words back into a sentence
         return String.join(" ", words);
 
-        // optional approach to print
-//        StringBuilder sb = new StringBuilder();
-//        for (int i = 0; i < words.length; i++) {
-//            sb.append(words[i]);
-//            if (i != words.length - 1) { //  But not add a space after the last word
-//                sb.append(" "); // add space between words
-//            }
-//        }
-//        return sb.toString(); // ✅ return result
     }
 }

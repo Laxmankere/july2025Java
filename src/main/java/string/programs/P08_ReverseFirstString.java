@@ -18,18 +18,18 @@ public class P08_ReverseFirstString {
         }
 
         // Split the sentence into words
-        String[] words = str.split(" ");
+        String wordsArray[] = str.split(" ");
         int firstIndex = 0;
 
         // Reverse the first word
-        String firstWord = words[firstIndex];
+        String firstWord = wordsArray[firstIndex];
         String reversedFirstWord = new StringBuilder(firstWord).reverse().toString();
 
         // Replace the first word with the reversed one
-        words[firstIndex] = reversedFirstWord;
+        wordsArray[firstIndex] = reversedFirstWord;
 
         // Join words back into a sentence
-        return String.join(" ", words);
+        return String.join(" ", wordsArray);
     }
 }
 

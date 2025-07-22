@@ -11,9 +11,9 @@ public class P06_PalindromeString {
 
         String rev = revString(s);
         if(rev.equals(s)){
-            System.out.println(s + " is palindrome");
+            System.out.println(s + " : is palindrome");
         }else{
-            System.out.println(s+ " is not palindrome");
+            System.out.println(s+ " : is not palindrome");
         }
 
     }

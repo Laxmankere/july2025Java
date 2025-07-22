@@ -12,14 +12,12 @@ public class P03_ReverseEachStringOnSamePlace {
         System.out.println("please enter th String : ");
         String s = sc.nextLine();
 
-//        String revString = revString(s);  // Approach1
-        String revString = revString1(s);   // Approach2
+        String revString = revString(s);
         System.out.println("Original : " + s);
         System.out.println("Reverse : " + revString);
 
     }
 
-    //Approach 1
     public static String revString(String s) {
         String rev = "";
         String word[] = s.split(" ");
@@ -33,17 +31,4 @@ public class P03_ReverseEachStringOnSamePlace {
         }
         return rev.trim();
     }
-
-    //Approach 2
-    public static String revString1(String s) {
-        String[] words = s.split(" "); // Split by space
-        StringBuilder result = new StringBuilder(); // Main StringBuilder
-
-        for (String word : words) {
-            StringBuilder sb = new StringBuilder(word); // Reverse each word
-            result.append(sb.reverse().toString()).append(" "); // Append to result
-        }
-        return result.toString().trim(); // Trim to remove trailing space
-    }
-
 }

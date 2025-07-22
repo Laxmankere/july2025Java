@@ -17,7 +17,6 @@ public class P02_ReverseVowelsKeepOther {
     }
 
     public static String reverseVowels(String s) {
-        int n = s.length();
         char[] ch = s.toCharArray();
         int start = 0;
         int end = s.length() - 1;

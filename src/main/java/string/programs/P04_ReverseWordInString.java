@@ -19,18 +19,6 @@ public class P04_ReverseWordInString {
     }
 
     // Approach 1
-    public static String reverseWord(String s) {
-        // Step 1: Trim and split by regex "\\s+" to remove extra spaces
-        String words[] = s.split("\\s+");
-        StringBuilder sb = new StringBuilder();
-        for (int i = words.length - 1; i >= 0; i--) {
-            sb.append(words[i]);
-            sb.append(" ");
-        }
-        return sb.toString().trim();
-    }
-
-    // Approach 2
     public static String reverseWords(String s) {
         String[] words = s.trim().split(" ");
         String result = "";
