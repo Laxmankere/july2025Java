@@ -7,7 +7,7 @@ import java.util.*;
     because it thinks | is a regex operator, not a literal pipe.
     "\\|" escapes the pipe so Java treats it as a literal character, not regex.
  */
-public class P15_FreqOfEachString {
+public class P17_FreqOfEachString {
     public static void main(String[] args) {
 //        String s = "java python java selenium playwright";
         String s = "java|python|java|selenium|playwright";

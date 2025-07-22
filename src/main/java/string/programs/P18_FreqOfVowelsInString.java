@@ -14,7 +14,12 @@ public class P18_FreqOfVowelsInString {
         // Loop through each character
         for (char ch : str.toCharArray()) {
             if (isVowel(ch)) {
-                hm.put(ch, hm.getOrDefault(ch, 0) + 1);
+//                hm.put(ch, hm.getOrDefault(ch, 0) + 1);
+                if (hm.containsKey(ch)) {
+                    hm.put(ch, hm.get(ch) + 1);
+                } else {
+                    hm.put(ch, 1);
+                }
             }
         }
         // Print all vowels with their frequencies

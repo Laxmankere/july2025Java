@@ -8,9 +8,10 @@ public class P27_LengthOfLastWord {
     }
 
     public static int lengthOflastWord(String s) {
-        String str = s.trim();              // Remove leading/trailing spaces
+        String str = s.trim();                // Remove leading/trailing spaces
         String[] words = str.split(" ");    // Split by space
-        return words[words.length - 1].length();  // Return length of last word
+        int lastIndex = words.length - 1;      // Get index of last word
+        return words[lastIndex].length();     // Return length of last word
 
     }
 }

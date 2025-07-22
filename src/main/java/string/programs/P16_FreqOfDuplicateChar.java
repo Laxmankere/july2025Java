@@ -3,7 +3,7 @@ package string.programs;
 import java.util.HashMap;
 import java.util.Map;
 
-public class P14_FreqOfDuplicateChar {
+public class P16_FreqOfDuplicateChar {
     public static void main(String[] args) {
         String s = "welcome to java";
         findDuplicateChar(s);

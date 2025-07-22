@@ -2,6 +2,10 @@ package string.programs;
 
 import java.util.Arrays;
 
+// Two strings are called anagrams if:
+//1.They contain exactly the same characters.
+//2.With exactly the same frequency.
+// Ex : "race" and "care" , "listen" and "silent"
 public class P22_AnagramString {
     public static void main(String[] args) {
 
