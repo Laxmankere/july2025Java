@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class Demo2 {
+public class Demo1 {
     public static void main(String[] args) {
 
         // Comparator to sort numbers based on the last digit

@@ -51,10 +51,5 @@ public class TerminalOps {
         String sentence = "hellow world";
         System.out.println(sentence.chars().filter(x -> x =='l').count());
 
-
-
-
-
-
     }
 }
